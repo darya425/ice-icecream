@@ -1,0 +1,156 @@
+.schedule {
+  font-family: $font-DM-Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+
+  background-color: $section-bcg-color;
+  width: 100%;
+
+  padding-bottom: 25px;
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 80px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 65px;
+  }
+}
+
+.schedule-wrapper {
+  position: relative;
+  top: -84px;
+}
+
+.schedule-list {
+  padding: 0;
+}
+
+.schedule.item {
+  padding: 43px 21px;
+  background-color: $white-color;
+
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+
+.selling-place {
+  display: inline-block;
+  border-radius: 4px;
+
+  font-style: normal;
+  color: $white-color;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.schedule-list > .item {
+  &:nth-child(2n + 1) {
+    .selling-place {
+      background-color: $yellow-bcg-color;
+    }
+  }
+
+  &:nth-child(2n) {
+    .selling-place {
+      background-color: $green-bcg-color;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &:last-child {
+    margin-bottom: 54px;
+  }
+}
+
+.schedule-description {
+  border-bottom: 1px solid $border;
+}
+
+.schedule-list .contact-info {
+  border-top: 1px solid $border;
+
+  margin-top: 25px;
+  padding-top: 25px;
+}
+
+.schedule-city,
+.working-days {
+  color: $primery-text-color;
+}
+
+.schedule-city {
+  margin-bottom: 10px;
+}
+
+.schedule-description {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+}
+
+.opening-hours {
+  color: $secondary-title-color;
+}
+
+.opening-hours.padding {
+  padding-bottom: 10px;
+}
+
+.schedule .contact-info {
+  padding-left: 0;
+}
+
+.schedule-description,
+.schedule .contact-info {
+  color: $secondary-text-color;
+}
+
+.schedule-buttons {
+  //   &:last-child {
+  //     padding-bottom: 25px;
+  //   }
+
+  left: 0;
+  text-align: center;
+  padding-left: 0;
+}
+
+.button-item {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+  max-width: 163px;
+  margin-bottom: 8px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @include button(14px, 17px, $white-color, $primary-title-color);
+  border-radius: 22px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &:focus,
+  &:hover {
+    background-color: $primary-title-color;
+    color: $white-color;
+  }
+}
+
+.schedule-arrow {
+  fill: currentColor;
+  height: 8px;
+  width: 8px;
+  margin-left: 8px;
+}
