@@ -21,6 +21,7 @@
 .schedule-wrapper {
   position: relative;
   top: -84px;
+  margin-top: 86px;
 }
 
 .schedule-list {
@@ -153,4 +154,8 @@
   height: 8px;
   width: 8px;
   margin-left: 8px;
+}
+
+a {
+  color: inherit;
 }
