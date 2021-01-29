@@ -44,7 +44,7 @@ a {
     @include font-data(34px, $primary-title-color, 400, 1.15, 0.04em);
   }
 
-  @media screen and (max-width: $max-tablet) {
+  @media screen and (min-width: $tablet) {
     @include font-data(48px, $primary-title-color, 400, 1.15, 0.04em);
   }
 
@@ -64,7 +64,7 @@ a {
     @include font-data(18px, $secondary-title-color, 400, 1.17, 0.04em);
   }
 
-  @media screen and (max-width: $max-tablet) {
+  @media screen and (min-width: $tablet) {
     @include font-data(26px, $secondary-title-color, 400, 1.15, 0.04em);
   }
 
