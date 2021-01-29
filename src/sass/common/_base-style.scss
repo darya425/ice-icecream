@@ -4,10 +4,6 @@ body {
   @media screen and (max-width: $max-mobile) {
     padding-top: 60px;
   }
-
-  @media screen and (min-width: $tablet) {
-    padding-top: 100px;
-  }
 }
 
 img {
@@ -29,6 +25,8 @@ img {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -50,7 +48,7 @@ a {
     @include font-data(48px, $primary-title-color, 400, 1.15, 0.04em);
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     @include font-data(58px, $primary-title-color, 400, 1.14, 0.04em);
   }
 }
@@ -70,7 +68,7 @@ a {
     @include font-data(26px, $secondary-title-color, 400, 1.15, 0.04em);
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     @include font-data(30px, $secondary-title-color, 400, 1.14, 0.04em);
   }
 }
@@ -90,8 +88,8 @@ a {
     padding-right: 34px;
   }
 
-  @media screen and (min-width: $desctop) {
-    width: $desctop;
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
     padding-left: 115px;
     padding-right: 115px;
   }
