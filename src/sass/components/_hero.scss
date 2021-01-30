@@ -1,12 +1,21 @@
 .page-hero {
   background-color: $hero-bcg-color;
   overflow: hidden;
+  position: relative;
 
   .container {
     &.hero {
       position: relative;
       height: 446px;
       margin-top: 57px;
+
+      @media screen and (min-width: $tablet) {
+        margin-top: 0;
+        height: 399px;
+      }
+      @media screen and (min-width: $desktop) {
+        height: 665px;
+      }
     }
   }
 }
@@ -15,16 +24,31 @@
   position: absolute;
   z-index: 3;
   bottom: 203px;
-
   width: 218px;
+
+  @media screen and (min-width: $tablet) {
+    bottom: 217px;
+    width: 162px;
+  }
+  @media screen and (min-width: $desktop) {
+    bottom: 356px;
+    width: 277px;
+  }
   .hero {
     text-align: left;
-    // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   .subtitle {
     &.hero {
       font-size: 26px;
       color: $white-color;
+      @media screen and (min-width: $tablet) {
+        font-size: 22px;
+        line-height: 0.91;
+      }
+      @media screen and (min-width: $desktop) {
+        font-size: 38px;
+        line-height: 1.16;
+      }
     }
   }
 
@@ -32,6 +56,85 @@
     &.hero {
       font-size: 48px;
       line-height: 0.96;
+      letter-spacing: 0em;
+      @media screen and (min-width: $tablet) {
+        font-size: 34px;
+        line-height: 0.91;
+        letter-spacing: 0.04em;
+      }
+      @media screen and (min-width: $desktop) {
+        font-size: 58px;
+        line-height: 0.91;
+      }
+    }
+  }
+}
+
+.facilities-thumb {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    display: initial;
+    right: 42px;
+    bottom: 205px;
+    z-index: 0;
+    .facilities-item {
+      position: relative;
+      &:first-child {
+        margin-bottom: 13px;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        background-color: $white-color;
+        z-index: -1;
+        top: -2px;
+        right: -8px;
+      }
+    }
+    .facilities-number {
+      color: $primary-title-color;
+
+      font-size: 28px;
+      line-height: 1.14;
+      text-align: right;
+    }
+    .facilities-type {
+      margin: 0;
+      color: $white-color;
+      font-family: $font-DM-Sans;
+      font-size: 8px;
+      line-height: 1.25;
+      text-align: right;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    right: 116px;
+    bottom: 340px;
+
+    .facilities-item {
+      &:first-child {
+        margin-bottom: 15px;
+      }
+      &::after {
+        content: '';
+        height: 30px;
+        width: 30px;
+        top: -3px;
+        right: -18px;
+      }
+    }
+    .facilities-number {
+      font-size: 46px;
+      line-height: 1.14;
+    }
+    .facilities-type {
+      font-size: 14px;
+      line-height: 1.29;
     }
   }
 }
@@ -39,16 +142,29 @@
 .button-thumb {
   position: absolute;
   z-index: 3;
+  display: flex;
   bottom: 160px;
 
-  margin-top: 19px;
+  @media screen and (min-width: $tablet) {
+    bottom: 173px;
+  }
+  @media screen and (min-width: $desktop) {
+    bottom: 291px;
+  }
   .link {
     font-size: 8px;
     line-height: 1.25;
+    @media screen and (min-width: $desktop) {
+      font-size: 14px;
+      line-height: 1.25;
+    }
   }
   .products {
     display: inline-block;
     @include button(7px, 14px, $primary-title-color, $white-color);
+    @media screen and (min-width: $desktop) {
+      @include button(13px, 21px, $primary-title-color, $white-color);
+    }
     &:hover,
     &:focus {
       background-color: #c7133e;
@@ -58,10 +174,72 @@
   .howitsmade {
     display: inline-block;
     margin-left: 8px;
+
     @include button(7px, 14px, $white-color, $primary-title-color);
+    @media screen and (min-width: $desktop) {
+      margin-left: 15px;
+      @include button(13px, 21px, $white-color, $primary-title-color);
+    }
     &:hover,
     &:focus {
       background-color: #ecebeb;
+    }
+  }
+}
+
+.description-thumb {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: initial;
+    position: absolute;
+    left: 154px;
+    bottom: 34px;
+    width: 114px;
+
+    .description-text {
+      margin-top: 0;
+      margin-bottom: 7px;
+      color: $white-color;
+      font-family: $font-DM-Sans;
+      font-size: 8px;
+      line-height: 1.5;
+    }
+    .description-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+
+      background-color: $white-color;
+    }
+    .icon-link {
+      display: inline-block;
+      width: 0.4em;
+      height: 0.4em;
+      fill: $primary-title-color;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    left: 294px;
+    bottom: 55px;
+    width: 200px;
+
+    .description-text {
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    .description-link {
+      width: 26px;
+      height: 26px;
+    }
+    .icon-link {
+      width: 0.5em;
+      height: 0.5em;
     }
   }
 }
@@ -73,6 +251,13 @@
     bottom: 0px;
     left: 117px;
 
+    @media screen and (min-width: $tablet) {
+      left: 378px;
+    }
+    @media screen and (min-width: $desktop) {
+      left: 593px;
+    }
+
     &::before {
       content: '';
       position: absolute;
@@ -83,6 +268,47 @@
       z-index: -1;
       bottom: 75px;
       left: -81px;
+
+      @media screen and (min-width: $tablet) {
+        height: 322px;
+        width: 324px;
+        left: -71px;
+        bottom: 46px;
+      }
+      @media screen and (min-width: $desktop) {
+        height: 538px;
+        width: 538px;
+        left: -119px;
+        bottom: 75px;
+      }
+    }
+  }
+  .picture-milk {
+    display: none;
+    @media screen and (min-width: $tablet) {
+      display: initial;
+      position: absolute;
+      z-index: 1;
+      bottom: 28px;
+    }
+    @media screen and (min-width: $desktop) {
+      display: initial;
+      position: absolute;
+      z-index: 1;
+      bottom: 44px;
+    }
+  }
+  .picture-icegirl {
+    display: none;
+    @media screen and (min-width: $tablet) {
+      display: initial;
+      position: absolute;
+      z-index: 1;
+      bottom: 0px;
+      right: 34px;
+    }
+    @media screen and (min-width: $desktop) {
+      right: 110px;
     }
   }
 }
