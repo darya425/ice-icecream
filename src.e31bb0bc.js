@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\icon-home.svg":[["icon-home.13c06842.svg","images/icon-home.svg"],"images/icon-home.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"slick.js":[function(require,module,exports) {
+},{"./..\\images\\icon-home.svg":[["icon-home.13c06842.svg","images/icon-home.svg"],"images/icon-home.svg"],"./..\\images\\icon-home-active.svg":[["icon-home-active.f9803f4e.svg","images/icon-home-active.svg"],"images/icon-home-active.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"slick.js":[function(require,module,exports) {
 (function () {
   $('.comments-list').slick({
     slidesToShow: 1,
@@ -234,7 +234,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60904" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63303" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
