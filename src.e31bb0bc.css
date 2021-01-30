@@ -522,18 +522,18 @@ a {
 @media screen and (min-width: 768px) {
   .products {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
 .product-item {
   max-width: 280px;
   position: relative;
+  margin-right: auto;
+  margin-left: auto;
 }
 @media screen and (max-width: 767px) {
-  .product-item {
-    margin-right: auto;
-    margin-left: auto;
-  }
   .product-item:not(:last-child) {
     margin-bottom: 130px;
   }
@@ -983,7 +983,6 @@ a {
 .schedule-wrapper {
   position: relative;
   top: -84px;
-  margin-top: 86px;
 }
 
 .schedule-list {
