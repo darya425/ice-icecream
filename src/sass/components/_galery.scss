@@ -1,7 +1,7 @@
 .gallery {
   .container {
     position: relative;
-    padding-bottom: 170px;
+    padding-bottom: 86px;
   }
 }
 
@@ -125,17 +125,32 @@
     margin-right: 18px;
   }
 
-  &.slick-active {
+  &:first-child {
     background-color: transparent;
-
     button::before {
       background-image: url('../images/icon-home.svg');
       background-repeat: no-repeat;
       background-position: center;
     }
+
+    &.slick-active {
+      background-color: transparent;
+      button::before {
+        background-image: url('../images/icon-home-active.svg');
+      }
+    }
+  }
+
+  &.slick-active {
+    background-color: #d31342;
+
+    button::before {
+      opacity: 1;
+    }
   }
 
   button::before {
+    opacity: 1;
     content: '';
     width: 100%;
     height: 100%;
