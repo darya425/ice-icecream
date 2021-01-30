@@ -3,6 +3,7 @@
         <h3 class="subtitle">tradition and love</h3>
         <h2 class="title">how it’s made?</h2>
         <div class="made">
+          <div class="thumb">
             <picture>
                 <!-- Desktop -->
                 <source
@@ -57,38 +58,104 @@
                 />
                 <img  class="made-img" src="./images/desktop/made-desktop-cow.png" alt="cow and milk">
               </picture>
-            <div class="made-text">
-                <p>Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.</p>
-                <div class="made-text-secondary">
-                    <p>Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.</p>
-                    <span>Aliquam erat volutpat. Aenean accumsan.</span>
+          </div>
+              <div class="made-paragraph">
+                <div class="made-text">
+                    <p>Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.</p>
+                    <div class="made-text-secondary">
+                        <p>Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.</p>
+                        <span>Aliquam erat volutpat. Aenean accumsan.</span>
+                    </div>
+                    <div class="text-background">
+                      <picture>
+                        <!-- Desktop -->
+                        <source
+                          srcset="
+                            ./images/desktop/made-desktop-milk.webp    1x,
+                            ./images/desktop/made-desktop-milk@2x.webp 2x
+                          "
+                          type="image/webp"
+                          media="(min-width: 1280px)"
+                        />
+                        <source
+                          srcset="
+                            ./images/desktop/made-desktop-milk.png    1x,
+                            ./images/desktop/made-desktop-milk@2x.png 2x
+                          "
+                          type="image/png"
+                          media="(min-width: 1280px)"
+                        />
+                        <!-- Mobile -->
+                        <source
+                          srcset="
+                            ./images/mobile/made-mobile-milk.webp    1x,
+                            ./images/mobile/made-mobile-milk@2x.webp 2x
+                          "
+                          type="image/webp"
+                          media="(max-width: 767px)"
+                        />
+                        <source
+                          srcset="
+                            ./images/mobile/made-mobile-milk.png    1x,
+                            ./images/mobile/made-mobile-milk@2x.png 2x
+                          "
+                          type="image/png"
+                          media="(max-width: 767px)"
+                        />
+                        <img src="./images/desktop/made-desktop-milk.png" alt="milk">
+                      </picture>
+                    </div>
                 </div>
-                <div class="text-background">
-                    <img src="./images/mobile/made-mobile-milk.png" alt="milk">
+                <div  class="made-button">
+                    <a href="https://www.facebook.com/groups/icecreampassion/permalink/285177492938588/" class="button-link">
+                        <span>Read more</span>
+                        <svg class="button-icon" width="18" height="22">
+                            <use href="./images/symbol-defs.svg#icon-buttom"></use>
+                        </svg>
+                    </a>
                 </div>
-            </div>
-            <div  class="made-button">
-                <a href="https://www.facebook.com/groups/icecreampassion/permalink/285177492938588/" class="button-link">
-                    <span>Read more</span>
-                    <svg class="button-icon" width="18" height="22">
-                        <use href="./images/symbol-defs.svg#icon-buttom"></use>
-                    </svg>
-                </a>
-            </div>
+              </div>
         </div>
         <ul class="made-features-list">
             <li class="made-features-item">
-                <img src="./images/desktop/made-desktop-icon1.png" alt="icon1">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/made-desktop-icon1.png    1x,
+                      ./images/desktop/made-desktop-icon1@2x.png 2x
+                    "
+                    type="image/png"
+                  />
+                  <img src="./images/desktop/made-desktop-icon1.png" alt="icon1">
+                </picture>
                 <span>721</span>
                 <p class="features-item-text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
             </li>
             <li class="made-features-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/made-desktop-icon2.png    1x,
+                    ./images/desktop/made-desktop-icon2@2x.png 2x
+                  "
+                  type="image/png"
+                />
                 <img src="./images/desktop/made-desktop-icon2.png" alt="icon2">
+              </picture>
                 <span>16kg</span>
                 <p class="features-item-text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
             </li>
             <li class="made-features-item">
-                <img src="./images/desktop/made-desktop-icon3.png" alt="icon3">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/made-desktop-icon3.png    1x,
+                    ./images/desktop/made-desktop-icon3@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <img src="./images/desktop/made-desktop-icon3.png" alt="icon2">
+              </picture>
                 <span>84</span>
                 <p class="features-item-text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
             </li>
