@@ -722,6 +722,18 @@ a {
   padding-bottom: 145px;
   background-color: #fff5f6;
 }
+@media screen and (min-width: 768px) {
+  .page-made {
+    padding-top: 165px;
+    padding-bottom: 212px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .page-made {
+    padding-top: 125px;
+    padding-bottom: 310px;
+  }
+}
 
 .page-made .subtitle {
   font-size: 18px;
@@ -730,6 +742,16 @@ a {
   font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.04em;
+}
+@media screen and (min-width: 768px) {
+  .page-made .subtitle {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .page-made .subtitle {
+    font-size: 30px;
+  }
 }
 
 .page-made .title {
@@ -740,31 +762,100 @@ a {
   line-height: 1.15;
   letter-spacing: 0.04em;
 }
+@media screen and (min-width: 768px) {
+  .page-made .title {
+    margin-bottom: 50px;
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .page-made .title {
+    margin-bottom: 55px;
+    font-size: 58px;
+  }
+}
 
 .made {
   margin-bottom: 38px;
 }
+@media screen and (min-width: 768px) {
+  .made {
+    display: flex;
+    margin-bottom: 66px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .made {
+    position: relative;
+    margin-bottom: 40px;
+    z-index: 2;
+  }
+}
 
-.made-img {
+.made .thumb {
   margin-bottom: 46px;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .made .thumb {
+    min-width: 340px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .made .thumb {
+    min-width: 516px;
+    margin-bottom: 0;
+  }
+}
+.made-paragraph {
+  padding-top: 50px;
+}
+@media screen and (min-width: 768px) {
+  .made-paragraph {
+    margin-left: 17px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .made-paragraph {
+    margin-left: 74px;
+  }
 }
 
 .made-text {
-  position: relative;
   margin-top: 0;
+  margin-bottom: 30px;
   padding-right: 30px;
   padding-left: 30px;
-  margin-bottom: 30px;
   font-size: 12px;
   color: #000000;
   font-weight: 500;
   line-height: 1.62;
   letter-spacing: 0.04em;
 }
+@media screen and (max-width: 767px) {
+  .made-text {
+    position: relative;
+  }
+}
+@media screen and (min-width: 768px) {
+  .made-text {
+    margin-bottom: 52px;
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .made-text {
+    margin-bottom: 45px;
+    font-size: 16px;
+  }
+}
 
 .made-text p {
   margin-top: 0;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .made-text-secondary {
@@ -776,6 +867,12 @@ a {
   line-height: 1.62;
   letter-spacing: 0.04em;
 }
+@media screen and (min-width: 768px) {
+  .made-text-secondary {
+    font-size: 14px;
+    line-height: 1.9;
+  }
+}
 
 .made-text-secondary p {
   margin-bottom: 15px;
@@ -786,6 +883,20 @@ a {
   bottom: 0;
   left: -20px;
   width: 320px;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .text-background {
+    display: none;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .text-background {
+    min-width: 1280px;
+    height: 535px;
+    top: 50px;
+    left: -115px;
+    z-index: 1;
+  }
 }
 
 .made-button {
@@ -803,6 +914,12 @@ a {
 }
 .made-button:hover, .made-button:focus {
   background-color: #ecebeb;
+}
+@media screen and (min-width: 768px) {
+  .made-button {
+    margin-left: 0;
+    font-size: 16px;
+  }
 }
 
 .button-link {
@@ -824,13 +941,30 @@ a {
   padding-left: 0;
   padding-right: 50px;
 }
+@media screen and (min-width: 768px) {
+  .made-features-list {
+    display: flex;
+    padding-right: 0;
+  }
+}
 
 .made-features-item:not(:last-child) {
   margin-bottom: 38px;
 }
+@media screen and (min-width: 768px) {
+  .made-features-item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 60px;
+  }
+}
 
 .made-features-item img {
   margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .made-features-item img {
+    margin-bottom: 36px;
+  }
 }
 
 .made-features-item span {
@@ -841,15 +975,25 @@ a {
   line-height: 1.13;
   letter-spacing: 0.04em;
 }
+@media screen and (min-width: 768px) {
+  .made-features-item span {
+    font-size: 48px;
+  }
+}
 
 .made-features-item p {
-  margin-top: 16px;
+  margin-top: 15px;
   margin-bottom: 0;
   font-size: 12px;
   color: #000000;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.62;
   letter-spacing: 0.04em;
+}
+@media screen and (min-width: 768px) {
+  .made-features-item p {
+    font-size: 14px;
+  }
 }
 
 .gallery .container {
