@@ -6,17 +6,12 @@
 }
 
 .for-gallery {
-  position: relative;
-  width: 280px;
-  height: 122px;
-  margin-bottom: 32px;
+  position: absolute;
+  top: -45px;
 }
 
-.icecream-gallery {
-  position: absolute;
-  left: -19px;
-  right: -20px;
-  top: -48px;
+.comments-list {
+  padding-top: 154px;
 }
 
 .commentator-picture {
@@ -29,10 +24,11 @@
   padding: 43px 66px 26px 57px;
   background-color: $comment-bcg-color;
   z-index: 0;
+  width: 100%;
 
   .comment {
     margin: 0;
-    @include font-data(12px, $primery-text-color, 500, 2.59);
+    @include font-data(12px, $primery-text-color, 500, 31px);
     font-family: $font-DM-Sans;
     text-align: center;
 
