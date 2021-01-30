@@ -1,19 +1,40 @@
+.header ul {
+    margin: 0;
+    padding: 0;
+  }
+
+@media screen and (min-width: $desktop) {
+    .container{
+        padding-top: 38px;
+
+    }
+.menu-container{
+    align-items: center;
+}
+
+}
 .header {
   font-family: $font-DM-Sans;
   width: 100%;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.28;
-  position: fixed;
-  top: 0;
+//   position: fixed;
   z-index: 999;
   background-color: $hero-bcg-color;
   @include font-data(14px, $white-color, 700, 1.28);
-  padding-top: 6px;
+//   padding-top: 6px;
+@media screen and (max-width: $max-mobile) {
+    position: fixed;
+    top: 0;
 
-  & .container{
-      padding-bottom: 6px;
-  }
+
+    & .container{
+        padding-bottom: 6px;
+        padding-top: 6px;
+    }
+}
+  
 }
 .logo {
   display: block;
@@ -45,7 +66,7 @@
     display: flex;
   }
 }
-@media screen and (min-width: $tablet) {
+@media screen and (min-width: $desktop) {
   .navigacion,
   .main-nav,
   .main-header,
@@ -72,14 +93,16 @@
   .menu-container {
     align-items: center;
   }
+  
 }
+
 @media screen and (min-width: $desktop) {
   .contacts {
     display: flex;
     margin-left: auto;
   }
-  .navigacion {
-    margin-left: 93px;
+  .header .navigacion {
+    margin-right: 70px;
   }
   .contacts .telefon {
     padding-top: 32px;
@@ -88,15 +111,27 @@
   .contacts .item + .item {
     margin-left: 30px;
   }
+  .navigacion{
+    @include font-data(16px, $white-color, 700, 1.31);
+
+  }
 }
 .main-nav {
   align-items: center;
   width: 100%;
-  @media screen and (max-width: $max-mobile) {
-    padding-top: 16px;
-    padding-bottom: 16px;
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+    display: flex;
+    
+
   }
 }
+@media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+
+.button-buy.additional-button{
+    margin: 0;
+}
+}
+
 .menu-container {
   width: 100%;
 }
@@ -139,7 +174,10 @@
 }
 @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
   .header-mobile-menu {
-    margin-left: 291px;
+    margin-left: 281px;
+  }
+  .main-nav{
+      margin-top: 37px;
   }
 }
 
@@ -173,10 +211,7 @@
 //   }
 
 }
-.header ul {
-  margin: 0;
-  padding: 0;
-}
+
 @media screen and (max-width: $max-tablet) {
   .navigacion .item a {
     display: block;
@@ -199,13 +234,21 @@
 
 .menu-container {
   display: none;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #e17992;
+@media screen and (max-width: $max-tablet) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #e17992;
+    z-index: 999;
+}
+//   position: absolute;
+//   top: 0;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   background-color: #e17992;
 
-  @media screen and (min-width: $max-mobile) and (max-width: $max-tablet) {
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     display: none;
     position: absolute;
     top: 0;
@@ -213,17 +256,19 @@
     transform: translateX(-30%);
   }
   @media screen and (min-width: $desktop) {
+    //   position: absolute;
+
       display: flex;
       background: none;
       width: 100%;
-
+flex-direction: row-reverse;
   }
   width: 250px;
 //   background-color: #e17992;
   // padding: 60px 20px;
   // паддинги для мобилки
-  padding-top: 60px;
-  padding-bottom: 60px;
+//   padding-top: 60px;
+//   padding-bottom: 60px;
   z-index: 1;
   // position: absolute;
   // left: ;
@@ -253,24 +298,57 @@
 }
 .header .button-buy {
   display: flex;
+  border-radius: 25px;
 
   align-items: center;
   justify-content: center;
   font-family: $font-DM-Sans;
   @include font-data(16px, $primary-title-color, 700, 1.31);
 
-  // display: block;
-  // width: 209px;
-  // height: 44px;
+  @media screen and (max-width: $max-tablet) {
+     margin-top: 60px; 
   margin-right: auto;
   margin-left: auto;
-  border-radius: 25px;
+}
+//   border-radius: 25px;
 
   @include button(10px, 48px, $white-color, $primary-title-color);
-  margin-top: 6px;
+//   margin-top: 6px;
 }
 .header-button-icon {
   fill: currentColor;
   margin-left: 20px;
   // margin-right: 48px;
 }
+.button-buy.additional-button {
+    @media screen and (max-width: $max-mobile) {
+        display: none;
+    }
+    @media screen and (min-width: $desktop) {
+        display: none;
+    }
+    @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+margin: 0;
+padding: 0;
+// padding: 10px 48px;
+@include button(10px, 37px, $white-color, $primary-title-color);
+margin-left: auto;
+}
+}
+@media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+.menu-container{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform: translateX(-100%);
+    
+}
+.header-mobile-menu:focus + .button-buy.additional-button{
+    display: none;
+}
+}
+
+    .navigacion .item a:focus,
+    .navigacion .item a:hover {
+      color: $primary-title-color;
+    }
