@@ -858,17 +858,12 @@ a {
 }
 
 .for-gallery {
-  position: relative;
-  width: 280px;
-  height: 122px;
-  margin-bottom: 32px;
+  position: absolute;
+  top: -45px;
 }
 
-.icecream-gallery {
-  position: absolute;
-  left: -19px;
-  right: -20px;
-  top: -48px;
+.comments-list {
+  padding-top: 154px;
 }
 
 .commentator-picture {
@@ -881,13 +876,14 @@ a {
   padding: 43px 66px 26px 57px;
   background-color: #fafafa;
   z-index: 0;
+  width: 100%;
 }
 .for-comments .comment {
   margin: 0;
   font-size: 12px;
   color: #000000;
   font-weight: 500;
-  line-height: 2.59;
+  line-height: 31px;
   font-family: "DM Sans", sans-serif;
   text-align: center;
   background: repeating-linear-gradient(to bottom, transparent 0, transparent 30px, #e1e1e1 30px, #e1e1e1 31px);
