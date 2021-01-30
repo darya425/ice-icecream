@@ -5,6 +5,6 @@
     arrows: false,
     asNavFor: '.slider-nav',
     dots: true,
-    focusOnSelect: false
+    focusOnSelect: false,
   });
 })();
