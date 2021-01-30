@@ -854,16 +854,62 @@ a {
 
 .gallery .container {
   position: relative;
-  padding-bottom: 170px;
+}
+@media screen and (max-width: 767px) {
+  .gallery .container {
+    padding-bottom: 170px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery .container {
+    padding-bottom: 197px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .gallery .container {
+    padding-bottom: 234px;
+  }
 }
 
 .for-gallery {
   position: absolute;
-  top: -45px;
+  width: 100%;
+}
+.for-gallery .icecream-gallery {
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .for-gallery {
+    top: -48px;
+    left: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .for-gallery {
+    top: -106px;
+    left: -5px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .for-gallery {
+    top: -171px;
+  }
 }
 
-.comments-list {
-  padding-top: 154px;
+@media screen and (max-width: 767px) {
+  .comments-list {
+    padding-top: 154px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .comments-list {
+    padding-top: 279px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comments-list {
+    padding-top: 382px;
+  }
 }
 
 .commentator-picture {
@@ -872,38 +918,110 @@ a {
 
 .for-comments {
   position: relative;
-  margin-top: 29px;
-  padding: 43px 66px 26px 57px;
   background-color: #fafafa;
   z-index: 0;
   width: 100%;
 }
+@media screen and (max-width: 767px) {
+  .for-comments {
+    margin-top: 29px;
+    padding: 43px 66px 26px 57px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .for-comments {
+    margin: 19px auto 0;
+    padding: 47px 80px 34px 80px;
+    max-width: 620px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .for-comments {
+    margin: 15px auto 0;
+    padding: 47px 89px 39px 87px;
+    max-width: 926px;
+  }
+}
 .for-comments .comment {
   margin: 0;
-  font-size: 12px;
-  color: #000000;
-  font-weight: 500;
-  line-height: 31px;
   font-family: "DM Sans", sans-serif;
   text-align: center;
-  background: repeating-linear-gradient(to bottom, transparent 0, transparent 30px, #e1e1e1 30px, #e1e1e1 31px);
+}
+@media screen and (max-width: 767px) {
+  .for-comments .comment {
+    font-size: 12px;
+    color: #000000;
+    font-weight: 500;
+    line-height: 31px;
+    background: repeating-linear-gradient(to bottom, transparent 0, transparent 30px, #e1e1e1 30px, #e1e1e1 31px);
+  }
+}
+@media screen and (min-width: 768px) {
+  .for-comments .comment {
+    font-size: 14px;
+    color: #000000;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    background: repeating-linear-gradient(to bottom, transparent 0, transparent 29px, #e1e1e1 29px, #e1e1e1 30px);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .for-comments .comment {
+    font-size: 16px;
+    color: #000000;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    background: repeating-linear-gradient(to bottom, transparent 0, transparent 29px, #e1e1e1 29px, #e1e1e1 30px);
+  }
 }
 .for-comments .quotes {
   position: absolute;
-  top: 28px;
-  left: 61px;
   width: 54px;
   height: 40px;
   z-index: -1;
   fill: #e1e1e1;
 }
+@media screen and (max-width: 767px) {
+  .for-comments .quotes {
+    top: 28px;
+    left: 61px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .for-comments .quotes {
+    top: 30px;
+    left: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .for-comments .quotes {
+    top: 32px;
+    left: 50px;
+  }
+}
 
 .ellipses {
   display: flex;
   justify-content: space-between;
-  margin: 30px auto 18px;
   width: 32px;
   height: 4px;
+}
+@media screen and (max-width: 767px) {
+  .ellipses {
+    margin: 30px auto 18px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .ellipses {
+    margin: 24px auto 14px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .ellipses {
+    margin: 15px auto;
+  }
 }
 .ellipses .ellipse {
   display: block;
@@ -915,11 +1033,31 @@ a {
 
 .commentator {
   margin: 0;
-  font-size: 14px;
-  color: #000000;
-  font-weight: 500;
-  line-height: 1.86;
   text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .commentator {
+    font-size: 14px;
+    color: #000000;
+    font-weight: 500;
+    line-height: 1.86;
+  }
+}
+@media screen and (min-width: 768px) {
+  .commentator {
+    font-size: 16px;
+    color: #000000;
+    font-weight: 500;
+    line-height: 1.86;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .commentator {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 500;
+    line-height: 1.86;
+  }
 }
 
 .slide-menu {
@@ -950,9 +1088,18 @@ a {
   position: static;
   display: flex;
   justify-content: center;
-  margin-top: 30px;
   width: 100%;
   height: 12px;
+}
+@media screen and (max-width: 767px) {
+  .slick-dots {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .slick-dots {
+    margin-top: 35px;
+  }
 }
 
 .slick-dots li {

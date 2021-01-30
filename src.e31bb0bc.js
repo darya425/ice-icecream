@@ -197,7 +197,8 @@ module.hot.accept(reloadCSS);
     arrows: false,
     asNavFor: '.slider-nav',
     dots: true,
-    focusOnSelect: false
+    focusOnSelect: false,
+    adaptiveHeight: true
   });
 })();
 },{}],"index.js":[function(require,module,exports) {
@@ -234,7 +235,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63303" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59859" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
