@@ -1,130 +1,129 @@
 .page-made {
-    padding-top: 125px;
-    padding-bottom: 145px;
-    background-color: $section-bcg-color;
+  padding-top: 125px;
+  padding-bottom: 145px;
+  background-color: $section-bcg-color;
 }
 
 .page-made .subtitle {
-    font-size: 18px;
-    margin-bottom: 15px;
-    color: $secondary-title-color;
-    font-weight: 400;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: $secondary-title-color;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 }
 
 .page-made .title {
-    font-size: 34px;
-    color: $primary-title-color;
-    font-weight: 400;
-    line-height: 1.15;
-    letter-spacing: 0.04em;
+  font-size: 34px;
+  margin-bottom: 26px;
+  color: $primary-title-color;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
 }
 
 .made {
-    margin-bottom: 38px;
+  margin-bottom: 38px;
 }
 
 .made-img {
-    margin-bottom: 46px;
+  margin-bottom: 46px;
 }
 
 .made-text {
-    position: relative;
-    margin-top: 0;
-    padding-right: 30px;
-    padding-left: 30px;
-    margin-bottom: 30px;
-    @include font-data(12px, $primery-text-color, 500, 1.62, 0.04em);
+  position: relative;
+  margin-top: 0;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-bottom: 30px;
+  @include font-data(12px, $primery-text-color, 500, 1.62, 0.04em);
 }
 
 .made-text p {
-    margin-top: 0;
-    margin-bottom: 32px;
+  margin-top: 0;
+  margin-bottom: 32px;
 }
 
 .made-text-secondary {
-    margin: 0;
-    font-family: $font-DM-Sans;
-    @include font-data(12px, $secondary-text-color, 500, 1.62, 0.04em);
-    
+  margin: 0;
+  font-family: $font-DM-Sans;
+  @include font-data(12px, $secondary-text-color, 500, 1.62, 0.04em);
 }
 
 .made-text-secondary p {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .text-background {
-    position: absolute;
-    bottom: 0;
-    left: -20px;
-    width: 320px;
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  width: 320px;
 }
 
 .made-button {
-    display: flex;
-    // align-items: center;
-    // justify-content: center;
-    margin-left: 30px;
-    width: 176px;
-    height: 44px;
-    background-color: $white-color;
-    border-radius: 22px;
+  display: flex;
+  // align-items: center;
+  // justify-content: center;
+  margin-left: 30px;
+  width: 176px;
+  height: 44px;
+  background-color: $white-color;
+  border-radius: 22px;
 
-    // @include button(0 0, 37 38, $white-color, $primary-title-color);
-    @include font-data(14px, $primary-title-color, 700, 1.3, 0.04em);
+  // @include button(0 0, 37 38, $white-color, $primary-title-color);
+  @include font-data(14px, $primary-title-color, 700, 1.3, 0.04em);
 
-    &:hover,
-    &:focus {
-        background-color: #ECEBEB;
-    }
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
 
-
-    // &::after {
-    //     content: "";
-    //     display: inline-block;
-    //     background: url(.././images/symbol-defs.svg#icon-buttom);
-    //     width: 4px;
-    //     height: 8px;
-    //     fill: currentColor;
-    // }
+  // &::after {
+  //     content: "";
+  //     display: inline-block;
+  //     background: url(.././images/symbol-defs.svg#icon-buttom);
+  //     width: 4px;
+  //     height: 8px;
+  //     fill: currentColor;
+  // }
 }
 
 .button-link {
-    width: 100%;
-    height: 100%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: $primary-title-color;
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: $primary-title-color;
 }
 
 .button-icon {
-    margin-left: 7px;
-    fill: currentColor;
+  margin-left: 7px;
+  fill: currentColor;
 }
 
 .made-features-list {
-    margin: 0;
-    padding-left: 0;
-    padding-right: 50px;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 50px;
 }
 
 .made-features-item:not(:last-child) {
-    margin-bottom: 38px;
+  margin-bottom: 38px;
 }
 
 .made-features-item img {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .made-features-item span {
-    font-family: $font-Titan-One;
-    @include font-data(36px, $primary-title-color, 400, 1.13, 0.04em);
+  font-family: $font-Titan-One;
+  @include font-data(36px, $primary-title-color, 400, 1.13, 0.04em);
 }
 
 .made-features-item p {
-    margin-top: 16px;
-    margin-bottom: 0;
-    @include font-data(12px, $primery-text-color, 700, 1.62, 0.04em);
+  margin-top: 16px;
+  margin-bottom: 0;
+  @include font-data(12px, $primery-text-color, 700, 1.62, 0.04em);
 }
