@@ -1,9 +1,10 @@
 <header class="header">
     <div class="container">
     <div class="main-header">
+      <nav class="main-nav">
         <a class="logo" href="/">
             <img src="./images/mobile/logo.png" alt="">
-        </a>
+        </a> 
         <button type="button" class="header-mobile-menu" 
                     aria-controls="menu-container"
                     aria-expanded="false" data-menu-button>
@@ -12,34 +13,37 @@
                        <!-- <use class="icon-cross" href="./images/menuSprite.svg#icon-Close24" ></use> -->
                    </svg>
         </button>
-                <div class="menu-container" data-menu id="menu-container">
-                    <button type="button" class="header-mobile-menu menu-close"
+        <button type="button" class="button-buy additional-button">
+            Buy now
+            <svg class="header-button-icon" width="20" height="25" >
+            <use href="./images/symbol-defs.svg#icon-buttom" >    
+            </use>
+            </svg>
+        </button>
+        <div class="menu-container" data-menu id="menu-container">
+                <button type="button" class="header-mobile-menu menu-close"
                     aria-controls="main-nav"
                     aria-expanded="false" data-menu-button>
-                   <svg class="menu-button" width="20" height="10" aria-label="переключатель мобального меню">
+                    <svg class="menu-button" width="20" height="10" aria-label="переключатель мобального меню">
                        <use class="icon-cross" href="./images/symbol-defs.svg#icon-Close24" ></use>
-                   </svg>
+                    </svg>
                 </button>
-                    <button type="button" class="button-buy">
+                <button type="button" class="button-buy">
                         Buy now
                         <svg class="header-button-icon" width="20" height="25" >
                         <use href="./images/symbol-defs.svg#icon-buttom" >    
                         </use>
                         </svg>
-                    </button>
-
-                    <ul class="navigacion">
+                </button>
+                <ul class="navigacion">
                         <li class="item"><a class="link" href="">Home</a></li>
                         <li class="item"><a class="link" href="">About us</a></li>
                         <li class="item"><a class="link" href="">How it’s made?</a></li>
                         <li class="item"><a class="link" href="">Our products</a></li>
                         <li class="item"><a class="link" href="">Contact</a></li>
-                    </ul>
-
-               
-                    
-                </div>   
-            </nav>
+                </ul>
+        </div>   
+      </nav>
     </div>
     </div>
 </header>
