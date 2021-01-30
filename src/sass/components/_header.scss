@@ -10,6 +10,10 @@
   background-color: $hero-bcg-color;
   @include font-data(14px, $white-color, 700, 1.28);
   padding-top: 6px;
+
+  & .container{
+      padding-bottom: 6px;
+  }
 }
 .logo {
   display: block;
@@ -17,7 +21,16 @@
   height: 50px;
 }
 .header-mobile-menu {
+    border: none;
+    background-color: inherit;
   color: $primary-title-color;
+  @media screen and (max-width: $max-mobile) {
+      margin-left: auto;
+  }
+  
+  @media screen and (min-width: $desktop) {
+      display: none;
+  }
 //   @media screen and (max-width: $max-mobile) {
 //       margin-left: auto;
 //     margin-left: 50px;
@@ -40,7 +53,7 @@
     display: flex;
   }
   .navigacion .item + .item {
-    margin-left: 22px;
+    margin-left: 35px;
   }
 }
 @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
@@ -93,7 +106,7 @@
 }
 
 // выпадающее меню
-.header-mobile-menu {
+.h {
   // display: block;
   // margin: 0px;
   border: none;
@@ -233,7 +246,7 @@
   top: 17px;
   right: 13px;
   color: $white-color;
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $desktop) {
       display: none;
       
   }
