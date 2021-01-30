@@ -1,17 +1,41 @@
 .gallery {
   .container {
     position: relative;
-    padding-bottom: 170px;
+    @media screen and (max-width: 767px) {
+      padding-bottom: 170px;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding-bottom: 197px;
+    }
   }
 }
 
 .for-gallery {
   position: absolute;
-  top: -45px;
+  width: 100%;
+
+  .icecream-gallery {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 767px) {
+    top: -45px;
+  }
+
+  @media screen and (min-width: 768px) {
+    top: -106px;
+  }
 }
 
 .comments-list {
-  padding-top: 154px;
+  @media screen and (max-width: 767px) {
+    padding-top: 154px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 279px;
+  }
 }
 
 .commentator-picture {
@@ -20,44 +44,81 @@
 
 .for-comments {
   position: relative;
-  margin-top: 29px;
-  padding: 43px 66px 26px 57px;
   background-color: $comment-bcg-color;
   z-index: 0;
   width: 100%;
 
+  @media screen and (max-width: 767px) {
+    margin-top: 29px;
+    padding: 43px 66px 26px 57px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 19px auto 0;
+    padding: 47px 80px 34px 80px;
+    max-width: 620px;
+  }
+
   .comment {
     margin: 0;
-    @include font-data(12px, $primery-text-color, 500, 31px);
     font-family: $font-DM-Sans;
     text-align: center;
 
-    background: repeating-linear-gradient(
-      to bottom,
-      transparent 0,
-      transparent 30px,
-      $border 30px,
-      $border 31px
-    );
+    @media screen and (max-width: 767px) {
+      @include font-data(12px, $primery-text-color, 500, 31px);
+      background: repeating-linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent 30px,
+        $border 30px,
+        $border 31px
+      );
+    }
+
+    @media screen and (min-width: 768px) {
+      @include font-data(14px, $primery-text-color, 500, 30px, 0.04em);
+      background: repeating-linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent 29px,
+        $border 29px,
+        $border 30px
+      );
+    }
   }
 
   .quotes {
     position: absolute;
-    top: 28px;
-    left: 61px;
     width: 54px;
     height: 40px;
     z-index: -1;
     fill: $border;
+
+    @media screen and (max-width: 767px) {
+      top: 28px;
+      left: 61px;
+    }
+
+    @media screen and (min-width: 768px) {
+      top: 30px;
+      left: 40px;
+    }
   }
 }
 
 .ellipses {
   display: flex;
   justify-content: space-between;
-  margin: 30px auto 18px;
   width: 32px;
   height: 4px;
+
+  @media screen and (max-width: 767px) {
+    margin: 30px auto 18px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 24px auto 14px;
+  }
 
   .ellipse {
     display: block;
@@ -70,8 +131,15 @@
 
 .commentator {
   margin: 0;
-  @include font-data(14px, $primery-text-color, 500, 1.86);
   text-align: center;
+
+  @media screen and (max-width: 767px) {
+    @include font-data(14px, $primery-text-color, 500, 1.86);
+  }
+
+  @media screen and (min-width: 768px) {
+    @include font-data(16px, $primery-text-color, 500, 1.86);
+  }
 }
 
 .slide-menu {
@@ -104,9 +172,16 @@
   position: static;
   display: flex;
   justify-content: center;
-  margin-top: 30px;
   width: 100%;
   height: 12px;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 35px;
+  }
 }
 
 .slick-dots li {

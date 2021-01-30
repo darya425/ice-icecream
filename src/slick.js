@@ -6,5 +6,6 @@
     asNavFor: '.slider-nav',
     dots: true,
     focusOnSelect: false,
+    adaptiveHeight: true,
   });
 })();
