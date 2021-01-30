@@ -18,10 +18,10 @@
 }
 .header-mobile-menu {
   color: $primary-title-color;
-  @media screen and (max-width: $max-mobile) {
-    //   margin-left: auto;
-    margin-left: 50px;
-  }
+//   @media screen and (max-width: $max-mobile) {
+//       margin-left: auto;
+//     margin-left: 50px;
+//   }
 }
 .menu-button {
   fill: currentColor;
@@ -44,9 +44,9 @@
   }
 }
 @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
-  .container {
-    width: 320px;
-  }
+//   .header .container {
+//     width: 320px;
+//   }
   .contacts .item:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -97,11 +97,10 @@
   // display: block;
   // margin: 0px;
   border: none;
-  // margin-right: auto;
   cursor: pointer;
   color: #d41443;
   background-color: transparent;
-  // margin-left: auto;
+  margin-left: auto;
   @media screen and (min-width: $desktop) {
     display: none;
   }
@@ -110,9 +109,11 @@
   .main-nav {
     display: flex;
   }
-  // .main-nav .header-mobile-menu {
-  //   // margin-left: auto;
-  // }
+
+  .main-nav .header-mobile-menu {
+    margin-left: auto;
+  }
+
 }
 
 .header .logo {
@@ -140,14 +141,10 @@
   .button-buy {
     margin-bottom: 19px;
   }
-  // .mobile-menu.is-open .button-buy {
-  //   //   display: block;
-  //   // margin-right: auto;
-  //   // margin-left: auto;
-  // }
+
 }
 // .mobile-menu .icon-cross {
-//   // display: none;
+//   display: none;
 // }
 
 @media screen and (max-width: $max-tablet) {
@@ -157,9 +154,11 @@
   .navigacion .item a {
     display: inline;
   }
-  // .navigacion .item:not(:last-child) {
-  //   // margin-bottom: 22px;
-  // }
+
+//   .navigacion .item:not(:last-child) {
+//     margin-bottom: 22px;
+//   }
+
 }
 .header ul {
   margin: 0;
@@ -189,8 +188,10 @@
   display: none;
   position: absolute;
   top: 0;
-  left: 30%;
-  transform: translateX(-30%);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #e17992;
+
   @media screen and (min-width: $max-mobile) and (max-width: $max-tablet) {
     display: none;
     position: absolute;
@@ -198,8 +199,14 @@
     left: 30%;
     transform: translateX(-30%);
   }
+  @media screen and (min-width: $desktop) {
+      display: flex;
+      background: none;
+      width: 100%;
+
+  }
   width: 250px;
-  background-color: #e17992;
+//   background-color: #e17992;
   // padding: 60px 20px;
   // паддинги для мобилки
   padding-top: 60px;
@@ -226,6 +233,10 @@
   top: 17px;
   right: 13px;
   color: $white-color;
+  @media screen and (min-width: $tablet) {
+      display: none;
+      
+  }
 }
 .header .button-buy {
   display: flex;
