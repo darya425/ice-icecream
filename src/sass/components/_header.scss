@@ -1,252 +1,72 @@
-.header ul {
-    margin: 0;
-    padding: 0;
-  }
-
-@media screen and (min-width: $desktop) {
-    .container{
-        padding-top: 38px;
-
-    }
-.menu-container{
-    align-items: center;
-}
-
-}
 .header {
-  font-family: $font-DM-Sans;
   width: 100%;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.28;
-//   position: fixed;
-  z-index: 999;
+  z-index: 5;
+
   background-color: $hero-bcg-color;
-  @include font-data(14px, $white-color, 700, 1.28);
-//   padding-top: 6px;
-@media screen and (max-width: $max-mobile) {
+
+  @media screen and (max-width: $max-mobile) {
     position: fixed;
     top: 0;
-
-
-    & .container{
-        padding-bottom: 6px;
-        padding-top: 6px;
-    }
-}
-  
-}
-.logo {
-  display: block;
-  width: 199px;
-  height: 50px;
-}
-.header-mobile-menu {
-    border: none;
-    background-color: inherit;
-  color: $primary-title-color;
-  @media screen and (max-width: $max-mobile) {
-      margin-left: auto;
   }
-  
-  @media screen and (min-width: $desktop) {
-      display: none;
-  }
-//   @media screen and (max-width: $max-mobile) {
-//       margin-left: auto;
-//     margin-left: 50px;
-//   }
-}
-.menu-button {
-  fill: currentColor;
-}
-//*для мобилки*//
-@media screen and (max-width: $max-mobile) {
-  .main-header {
-    display: flex;
-  }
-}
-@media screen and (min-width: $desktop) {
-  .navigacion,
-  .main-nav,
-  .main-header,
-  .menu-container {
-    display: flex;
-  }
-  .navigacion .item + .item {
-    margin-left: 35px;
-  }
-}
-@media screen and (min-width: $tablet) and (max-width: $max-tablet) {
-//   .header .container {
-//     width: 320px;
-//   }
-  .contacts .item:not(:last-child) {
-    margin-bottom: 10px;
-  }
-  .navigacion {
-    margin-left: 88px;
-  }
-  .contacts {
-    margin-left: auto;
-  }
-  .menu-container {
-    align-items: center;
-  }
-  
 }
 
-@media screen and (min-width: $desktop) {
-  .contacts {
-    display: flex;
-    margin-left: auto;
-  }
-  .header .navigacion {
-    margin-right: 70px;
-  }
-  .contacts .telefon {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-  .contacts .item + .item {
-    margin-left: 30px;
-  }
-  .navigacion{
-    @include font-data(16px, $white-color, 700, 1.31);
-
-  }
+.main-header {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
+
 .main-nav {
+  display: flex;
+  width: 100%;
   align-items: center;
-  width: 100%;
-  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
-    display: flex;
-    
-
-  }
-}
-@media screen and (min-width: $tablet) and (max-width: $max-tablet) {
-
-.button-buy.additional-button{
-    margin: 0;
-}
 }
 
-.menu-container {
-  width: 100%;
-}
-.contacts-icon,
-.icon {
-  fill: currentColor;
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: $font-Titan-One;
+  text-transform: uppercase;
+  @include font-data(25px, $primary-title-color, 400, 1.15, 0.01em);
 }
 
-// выпадающее меню
-.h {
-  // display: block;
-  // margin: 0px;
-  border: none;
-  cursor: pointer;
-  color: #d41443;
-  background-color: transparent;
+.logo-img {
+  margin-right: 18px;
+}
+
+.header-mobile-menu {
   margin-left: auto;
+  padding: 5px;
+  border: none;
+  background-color: inherit;
+  color: $primary-title-color;
+
   @media screen and (min-width: $desktop) {
     display: none;
   }
 }
-@media screen and (max-width: $max-mobile) {
-  .main-nav {
-    display: flex;
-  }
-
-  .main-nav .header-mobile-menu {
-    margin-left: auto;
-  }
-
-}
-
-.header .logo {
-  display: inline;
-}
-@media screen and (max-width: $max-tablet) {
-  .header .header-mobile-menu {
-    display: inline;
-  }
-}
-@media screen and (min-width: $tablet) and (max-width: $max-tablet) {
-  .header-mobile-menu {
-    margin-left: 281px;
-  }
-  .main-nav{
-      margin-top: 37px;
-  }
-}
-
-.header-menu-button {
-  fill: currentColor;
-}
-.header-mobile-menu:focus .header-menu-button,
-.header-mobile-menu:hover .header-menu-button {
-  color: #fff;
-}
-@media screen and (max-width: $max-mobile) {
-  .button-buy {
-    margin-bottom: 19px;
-  }
-
-}
-// .mobile-menu .icon-cross {
-//   display: none;
-// }
-
-@media screen and (max-width: $max-tablet) {
-  .main-nav {
-    width: 100%;
-  }
-  .navigacion .item a {
-    display: inline;
-  }
-
-//   .navigacion .item:not(:last-child) {
-//     margin-bottom: 22px;
-//   }
-
-}
-
-@media screen and (max-width: $max-tablet) {
-  .navigacion .item a {
-    display: block;
-    @include font-data(14px, $white-color, 700, 1.28);
-
-    padding-top: 12px;
-    padding-bottom: 12px;
-    width: 100%;
-    padding-left: 21px;
-    // color: #000;
-    border-top: 1px solid #e18298;
-    border-bottom: 1px solid #e18298;
-
-    &:focus,
-    &:hover {
-      color: $primary-title-color;
-    }
-  }
-}
 
 .menu-container {
-  display: none;
-@media screen and (max-width: $max-tablet) {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #e17992;
-    z-index: 999;
-}
-//   position: absolute;
-//   top: 0;
-//   left: 50%;
-//   transform: translateX(-50%);
-//   background-color: #e17992;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 250px;
+  text-align: left;
+
+  background-color: #e17992;
+
+  transform: translateX(100%);
+  transition: transform 250ms $timing-function;
+
+  &.is-open {
+    display: block;
+
+    transform: translateX(0);
+  }
+
+  @media screen and (max-width: $max-mobile) {
+    height: 100vh;
+  }
 
   @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     display: none;
@@ -256,99 +76,150 @@
     transform: translateX(-30%);
   }
   @media screen and (min-width: $desktop) {
-    //   position: absolute;
-
-      display: flex;
-      background: none;
-      width: 100%;
-flex-direction: row-reverse;
-  }
-  width: 250px;
-//   background-color: #e17992;
-  // padding: 60px 20px;
-  // паддинги для мобилки
-//   padding-top: 60px;
-//   padding-bottom: 60px;
-  z-index: 1;
-  // position: absolute;
-  // left: ;
-  text-align: left;
-  &.is-open {
-    display: block;
-  }
-  @media screen and (max-width: $max-tablet) {
-    width: 254px;
-    height: 1020px;
-  }
-  @media screen and (max-width: $max-mobile) {
-    width: 250px;
-    height: 502px;
+    display: flex;
+    background: none;
+    width: 100%;
+    flex-direction: row-reverse;
   }
 }
-.header-mobile-menu.menu-close {
-  display: block;
+
+.menu-close {
   position: absolute;
-  top: 17px;
-  right: 13px;
-  color: $white-color;
+  top: 18px;
+  right: 23px;
+  fill: $white-color;
+
   @media screen and (min-width: $desktop) {
-      display: none;
-      
+    display: none;
   }
 }
-.header .button-buy {
+
+.button-buy {
   display: flex;
-  border-radius: 25px;
+  margin: 60px auto 19px auto;
 
-  align-items: center;
-  justify-content: center;
-  font-family: $font-DM-Sans;
-  @include font-data(16px, $primary-title-color, 700, 1.31);
+  @include button(12px, 49px, $white-color, $primary-title-color);
+  @include font-data(16px, $primary-title-color, 500, 1.31);
 
-  @media screen and (max-width: $max-tablet) {
-     margin-top: 60px; 
-  margin-right: auto;
-  margin-left: auto;
+  transition: background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
 }
-//   border-radius: 25px;
 
-  @include button(10px, 48px, $white-color, $primary-title-color);
-//   margin-top: 6px;
-}
 .header-button-icon {
+  margin-left: 26px;
+
   fill: currentColor;
-  margin-left: 20px;
-  // margin-right: 48px;
 }
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+
+  .item {
+    padding: 13px 21px;
+    border-top: 1px solid #e18298;
+    border-bottom: 1px solid #e18298;
+  }
+
+  .link {
+    font-family: $font-DM-Sans;
+    @include font-data(14px, $white-color, 700, 1.31, 0.01em);
+    transition: color 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+      color: $primary-title-color;
+    }
+  }
+}
+
+// ПИЗДЕЦ
+
+//*для мобилки*//
+@media screen and (max-width: $max-mobile) {
+  .main-header {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .main-header,
+  .menu-container {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+  .contacts .item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .contacts {
+    margin-left: auto;
+  }
+
+  .menu-container {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .contacts {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .contacts .telefon {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .contacts .item + .item {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+  .button-buy.additional-button {
+    margin: 0;
+  }
+}
+
+.contacts-icon,
+.icon {
+  fill: currentColor;
+}
+
+.header-menu-button {
+  fill: currentColor;
+}
+
 .button-buy.additional-button {
-    @media screen and (max-width: $max-mobile) {
-        display: none;
-    }
-    @media screen and (min-width: $desktop) {
-        display: none;
-    }
-    @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
-margin: 0;
-padding: 0;
-// padding: 10px 48px;
-@include button(10px, 37px, $white-color, $primary-title-color);
-margin-left: auto;
-}
+  @media screen and (max-width: $max-mobile) {
+    display: none;
+  }
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+    margin: 0;
+    padding: 0;
+
+    @include button(10px, 37px, $white-color, $primary-title-color);
+    margin-left: auto;
+  }
 }
 @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
-.menu-container{
+  .menu-container {
     position: absolute;
     top: 0;
     left: 100%;
     transform: translateX(-100%);
-    
-}
-.header-mobile-menu:focus + .button-buy.additional-button{
+  }
+  .header-mobile-menu:focus + .button-buy.additional-button {
     display: none;
+  }
 }
-}
-
-    .navigacion .item a:focus,
-    .navigacion .item a:hover {
-      color: $primary-title-color;
-    }
