@@ -1,20 +1,21 @@
 .page-hero {
   background-color: $hero-bcg-color;
-  overflow: hidden;
   position: relative;
+
+  @media screen and (max-width: $max-mobile) {
+    overflow: hidden;
+  }
 
   .container {
     &.hero {
       position: relative;
-      height: 446px;
-      margin-top: 57px;
+      height: 442px;
 
       @media screen and (min-width: $tablet) {
-        margin-top: 0;
-        height: 399px;
+        height: 309px;
       }
       @media screen and (min-width: $desktop) {
-        height: 665px;
+        height: 575px;
       }
     }
   }
@@ -167,6 +168,7 @@
     }
     &:hover,
     &:focus {
+      transition: background-color 250ms $timing-function;
       background-color: #c7133e;
     }
   }
@@ -182,6 +184,7 @@
     }
     &:hover,
     &:focus {
+      transition: background-color 250ms $timing-function;
       background-color: #ecebeb;
     }
   }
@@ -215,6 +218,12 @@
       border-radius: 50%;
 
       background-color: $white-color;
+
+      &:hover,
+      &:focus {
+        transition: background-color 250ms $timing-function;
+        background-color: #ecebeb;
+      }
     }
     .icon-link {
       display: inline-block;
@@ -296,6 +305,7 @@
       position: absolute;
       z-index: 1;
       bottom: 44px;
+      left: 77px;
     }
   }
   .picture-icegirl {
