@@ -8,17 +8,30 @@
     position: fixed;
     top: 0;
   }
+
+  @media screen and (min-width: $tablet) {
+    overflow: hidden;
+  }
 }
 
 .main-header {
   padding-top: 5px;
   padding-bottom: 5px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 37px;
+    padding-bottom: 7px;
+  }
 }
 
 .main-nav {
   display: flex;
   width: 100%;
   align-items: center;
+
+  @media screen and (min-width: $desktop) {
+    position: relative;
+  }
 }
 
 .logo {
@@ -27,6 +40,11 @@
   font-family: $font-Titan-One;
   text-transform: uppercase;
   @include font-data(25px, $primary-title-color, 400, 1.15, 0.01em);
+
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    left: -38px;
+  }
 }
 
 .logo-img {
@@ -39,6 +57,7 @@
   border: none;
   background-color: inherit;
   color: $primary-title-color;
+  z-index: 6;
 
   @media screen and (min-width: $desktop) {
     display: none;
@@ -46,40 +65,29 @@
 }
 
 .menu-container {
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  width: 250px;
-  text-align: left;
-
-  background-color: #e17992;
-
-  transform: translateX(100%);
-  transition: transform 250ms $timing-function;
-
-  &.is-open {
-    display: block;
-
-    transform: translateX(0);
-  }
-
-  @media screen and (max-width: $max-mobile) {
-    height: 100vh;
-  }
-
-  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
-    display: none;
+  @media screen and (max-width: $max-tablet) {
     position: absolute;
     top: 0;
-    left: 30%;
-    transform: translateX(-30%);
+    right: 0;
+    z-index: 10;
+
+    width: 250px;
+    height: 100vh;
+
+    text-align: left;
+    background-color: #e17992;
+
+    transform: translateX(100%);
+    transition: transform 250ms $timing-function;
+
+    &.is-open {
+      transform: translateX(0);
+    }
   }
+
   @media screen and (min-width: $desktop) {
-    display: flex;
-    background: none;
-    width: 100%;
-    flex-direction: row-reverse;
+    position: relative;
+    z-index: 6;
   }
 }
 
@@ -107,12 +115,16 @@
   &:focus {
     background-color: #ecebeb;
   }
-}
 
-.header-button-icon {
-  margin-left: 26px;
+  .header-button-icon {
+    margin-left: 26px;
 
-  fill: currentColor;
+    fill: currentColor;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
 }
 
 .navigation {
@@ -123,103 +135,69 @@
     padding: 13px 21px;
     border-top: 1px solid #e18298;
     border-bottom: 1px solid #e18298;
+
+    @media screen and (min-width: $desktop) {
+      border: none;
+      padding: 0;
+
+      &:not(:first-child) {
+        margin-left: 36px;
+      }
+    }
   }
 
   .link {
     font-family: $font-DM-Sans;
-    @include font-data(14px, $white-color, 700, 1.31, 0.01em);
+    @include font-data(14px, $white-color, 700, 1.31, 0.07em);
     transition: color 250ms $timing-function;
 
     &:hover,
     &:focus {
       color: $primary-title-color;
     }
-  }
-}
 
-// ПИЗДЕЦ
-
-//*для мобилки*//
-@media screen and (max-width: $max-mobile) {
-  .main-header {
-    display: flex;
-  }
-}
-
-@media screen and (min-width: $desktop) {
-  .main-header,
-  .menu-container {
-    display: flex;
-  }
-}
-
-@media screen and (min-width: $tablet) and (max-width: $max-tablet) {
-  .contacts .item:not(:last-child) {
-    margin-bottom: 10px;
+    @media screen and (min-width: $desktop) {
+      display: inline-block;
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
   }
 
-  .contacts {
-    margin-left: auto;
-  }
-
-  .menu-container {
-    align-items: center;
-  }
-}
-
-@media screen and (min-width: $desktop) {
-  .contacts {
-    display: flex;
-    margin-left: auto;
-  }
-
-  .contacts .telefon {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-  .contacts .item + .item {
-    margin-left: 30px;
-  }
-}
-
-@media screen and (min-width: $tablet) and (max-width: $max-tablet) {
-  .button-buy.additional-button {
-    margin: 0;
-  }
-}
-
-.contacts-icon,
-.icon {
-  fill: currentColor;
-}
-
-.header-menu-button {
-  fill: currentColor;
-}
-
-.button-buy.additional-button {
-  @media screen and (max-width: $max-mobile) {
-    display: none;
-  }
   @media screen and (min-width: $desktop) {
-    display: none;
-  }
-  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
-    margin: 0;
-    padding: 0;
+    flex-direction: row;
+    margin-left: 240px;
 
-    @include button(10px, 37px, $white-color, $primary-title-color);
-    margin-left: auto;
+    @include font-data(16px, $white-color, 700, 1.31, 0.01em);
   }
 }
-@media screen and (min-width: $tablet) and (max-width: $max-tablet) {
-  .menu-container {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    transform: translateX(-100%);
+
+.additional-button {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    z-index: 6;
+
+    @include button(10px, 33px, $white-color, $primary-title-color);
+    @include font-data(16px, $primary-title-color, 500, 1.31);
+
+    transition: background-color 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
+
+    .header-button-icon {
+      margin-left: 10px;
+
+      fill: currentColor;
+    }
   }
-  .header-mobile-menu:focus + .button-buy.additional-button {
-    display: none;
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 110px;
   }
 }
