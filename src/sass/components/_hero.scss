@@ -1,7 +1,10 @@
 .page-hero {
   background-color: $hero-bcg-color;
-  overflow: hidden;
   position: relative;
+
+  @media screen and (max-width: $max-mobile) {
+    overflow: hidden;
+  }
 
   .container {
     &.hero {
