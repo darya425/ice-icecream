@@ -127,24 +127,6 @@
   }
 }
 
-.schedule-description {
-  border-bottom: 1px solid $border;
-}
-
-.schedule-list .contact-info {
-  border-top: 1px solid $border;
-
-  padding-top: 25px;
-
-  @media screen and (min-width: $tablet) {
-    padding-top: 30px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    padding-top: 32px;
-  }
-}
-
 .schedule-city,
 .working-days {
   @include font-data(12px,$primery-text-color, 500, 1.86, null);
@@ -163,44 +145,56 @@
 }
 
 .schedule-description {
-  padding-bottom: 25px;
+  border-bottom: 1px solid $border;
   margin: 0;
-
+  margin-bottom: 25px;
+  padding-bottom: 25px;
 
   @media screen and (min-width: $tablet) {
+    margin-bottom: 30px;
     padding-bottom: 30px;
-    margin: 0;
   }
 
   @media screen and (min-width: $desktop) {
+    margin-bottom: 32px;
     padding-bottom: 32px;
   }
   }
 
 .working-days.start{
-  padding-top: 25px;
   margin: 0;
- 
-
-  @media screen and (min-width: $tablet) {
-    padding-top: 30px;;
-  }
-
-  @media screen and (min-width: $desktop) {
-    padding-top: 32px;
-  }
 }
 
 .opening-hours.start{
-  padding-bottom: 10px;
   margin: 0;
+  margin-bottom: 10px;
 
   @media screen and (min-width: $tablet) {
-    padding-bottom: 16px;
+    margin-bottom: 16px;
   }
 
   @media screen and (min-width: $desktop) {
-    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+}
+.opening-hours.end{
+  border-bottom: 1px solid $border;
+  @media screen and (max-width: $max-mobile) {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+  @include font-data(12px,$secondary-title-color, 500, 1.86, null);
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    @include font-data(14px,$secondary-title-color, 500, 1.86, null);
+  }
+
+  @media screen and (min-width: $desktop) {
+    @include font-data(16px,$secondary-title-color, 500, 1.86, null);
+    margin-bottom: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -208,18 +202,15 @@
   color: $secondary-title-color;
   margin: 0;
   @media screen and (max-width: $max-mobile) {
-  padding-bottom: 25px;
   @include font-data(12px,$secondary-title-color, 500, 1.86, null);
   }
 
   @media screen and (min-width: $tablet) {
-    padding-bottom: 30px;
     @include font-data(14px,$secondary-title-color, 500, 1.86, null);
   }
 
   @media screen and (min-width: $desktop) {
     @include font-data(16px,$secondary-title-color, 500, 1.86, null);
-    padding-bottom: 32px;
   }
 }
 
