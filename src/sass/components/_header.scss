@@ -7,10 +7,7 @@
   @media screen and (max-width: $max-mobile) {
     position: fixed;
     top: 0;
-  }
-
-  @media screen and (min-width: $tablet) {
-    overflow: hidden;
+    left: 0;
   }
 }
 
@@ -83,6 +80,10 @@
     &.is-open {
       transform: translateX(0);
     }
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+    width: 39%;
   }
 
   @media screen and (min-width: $desktop) {
