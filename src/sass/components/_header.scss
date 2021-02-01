@@ -74,11 +74,12 @@
     text-align: left;
     background-color: #e17992;
 
-    transform: translateX(100%);
+    transform-origin: top right;
+    transform: scaleX(1);
     transition: transform 250ms $timing-function;
 
     &.is-open {
-      transform: translateX(0);
+      transform: scaleX(0);
     }
   }
 
