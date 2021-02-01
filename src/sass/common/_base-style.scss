@@ -4,6 +4,10 @@ body {
   @media screen and (max-width: $max-mobile) {
     padding-top: 60px;
   }
+
+  @media screen and (min-width: $tablet) {
+    overflow-x: hidden;
+  }
 }
 
 img {

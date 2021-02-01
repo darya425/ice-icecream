@@ -1,4 +1,5 @@
 .page-made {
+  position: relative;
   padding-top: 125px;
   padding-bottom: 145px;
   background-color: $section-bcg-color;
@@ -23,11 +24,11 @@
   letter-spacing: 0.04em;
 
   @media screen and (min-width: $tablet) {
-      font-size: 26px;
+    font-size: 26px;
   }
 
   @media screen and (min-width: $desktop) {
-      font-size: 30px;
+    font-size: 30px;
   }
 }
 
@@ -59,55 +60,38 @@
   }
 
   @media screen and (min-width: $desktop) {
-      position: relative;
-      margin-bottom: 40px;
-      z-index: 2;
+    position: relative;
+    margin-bottom: 40px;
+    z-index: 2;
   }
-      
 }
 
-// .made-img {
-//   margin-bottom: 46px;
-
-//   @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
-//       min-width: 340px;
-//       margin-bottom: 0;
-//   }
-// }
-
-// @media screen and (min-width: $desktop) {
-//     .made-img {
-//         min-width: 516px;
-//     }
-// }
-
 .made .thumb {
-    margin-bottom: 46px;
-  
-    @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
-        min-width: 340px;
-        margin-bottom: 0;
-    }
+  margin-bottom: 46px;
+
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+    min-width: 340px;
+    margin-bottom: 0;
   }
-  
-  @media screen and (min-width: $desktop) {
-      .made .thumb {
-          min-width: 516px;
-          margin-bottom: 0;
-      }
+}
+
+@media screen and (min-width: $desktop) {
+  .made .thumb {
+    min-width: 516px;
+    margin-bottom: 0;
   }
+}
 
 .made-paragraph {
-    padding-top: 50px;
+  padding-top: 50px;
 
-    @media screen and (min-width: $tablet) {
-        margin-left: 17px;
-    }
+  @media screen and (min-width: $tablet) {
+    margin-left: 17px;
+  }
 
-    @media screen and (min-width: $desktop) {
-        margin-left: 74px;
-        // position: absolute;
-    }
+  @media screen and (min-width: $desktop) {
+    margin-left: 74px;
+  }
 }
 
 .made-text {
@@ -122,19 +106,15 @@
   }
 
   @media screen and (min-width: $tablet) {
-    //   margin-left: 17px;
-      margin-bottom: 52px;
-      padding-right: 0;
-      padding-left: 0;
-      font-size: 14px;
-      
+    margin-bottom: 52px;
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 14px;
   }
 
   @media screen and (min-width: $desktop) {
-    //   margin-left: 74px;
-      margin-bottom: 45px;
-      font-size: 16px;
-    //   position: absolute;
+    margin-bottom: 45px;
+    font-size: 16px;
   }
 }
 
@@ -146,7 +126,7 @@
 .made-text-secondary {
   margin: 0;
   font-family: $font-DM-Sans;
- 
+
   @include font-data(12px, $secondary-text-color, 500, 1.62, 0.04em);
 
   @media screen and (min-width: $tablet) {
@@ -155,29 +135,24 @@
   }
 }
 
-
 .made-text-secondary p {
   margin-bottom: 15px;
 }
 
 .text-background {
   position: absolute;
-  bottom: 0;
-  left: -20px;
-  width: 320px;
+
+  top: 766px;
+  left: 0;
+  max-width: 1600px;
 
   @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
-      display: none;
+    display: none;
   }
 
   @media screen and(min-width: $desktop) {
-      min-width: 1280px;
-      height: 535px;
-      top: 50px;
-      left: -115px;
-      z-index: 1;
-    //   bottom: -50px;
-    //   right: -115px;
+    top: 50px;
+    left: 0;
   }
 }
 
@@ -197,8 +172,8 @@
   }
 
   @media screen and (min-width: $tablet) {
-      margin-left: 0;
-      font-size: 16px;
+    margin-left: 0;
+    font-size: 16px;
   }
 }
 
@@ -222,8 +197,8 @@
   padding-right: 50px;
 
   @media screen and (min-width: $tablet) {
-      display: flex;
-      padding-right: 0;
+    display: flex;
+    padding-right: 0;
   }
 }
 
@@ -231,8 +206,8 @@
   margin-bottom: 38px;
 
   @media screen and (min-width: $tablet) {
-      margin-bottom: 0;
-      margin-right: 60px;
+    margin-bottom: 0;
+    margin-right: 60px;
   }
 }
 
@@ -240,7 +215,7 @@
   margin-bottom: 16px;
 
   @media screen and (min-width: $tablet) {
-      margin-bottom: 36px;
+    margin-bottom: 36px;
   }
 }
 
@@ -250,7 +225,7 @@
 
   @media screen and (min-width: $tablet) {
     font-size: 48px;
-}
+  }
 }
 
 .made-features-item p {
@@ -259,6 +234,6 @@
   @include font-data(12px, $primery-text-color, 500, 1.62, 0.04em);
 
   @media screen and (min-width: $tablet) {
-      font-size: 14px;
+    font-size: 14px;
   }
 }
