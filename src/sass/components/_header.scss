@@ -75,11 +75,11 @@
     background-color: #e17992;
 
     transform-origin: top right;
-    transform: scaleX(1);
+    transform: scale(0, 0);
     transition: transform 250ms $timing-function;
 
     &.is-open {
-      transform: scaleX(0);
+      transform: scale(1, 1);
     }
   }
 
